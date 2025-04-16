@@ -5731,10 +5731,10 @@ Content-Type: application/json
                anchor="key_rollover_anchor">
         <t>
           A Trust Anchor MUST publish an Entity Configuration about
-          itself. The Trust Anchor SHOULD set an expiration
-          time on its Entity Configuration,
-	  such that federation participants will re-fetch it at reasonable intervals.
-	  When a Trust Anchor rolls over its signing keys, it needs to:
+          itself. A Trust Anchor MUST publish an Entity Configuration about itself.
+          The expiration time set on this Entity Configuration SHOULD ensure that
+          federation participants re-fetch it at reasonable intervals. When a Trust
+          Anchor rolls over its signing keys, it needs to:
         </t>
         <t>
           <list style="numbers">
